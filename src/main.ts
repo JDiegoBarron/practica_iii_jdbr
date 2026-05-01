@@ -19,7 +19,7 @@ async function bootstrap() {
     .setVersion('1.0')
     .addBearerAuth() 
     .addServer("http://localhost:3000", "Servidor local")
-    .addServer("http://api-saes.render.com", "Servidor de producción")
+    .addServer("https://practica-iii-jdbr.onrender.com", "Servidor de producción")
     .build();
   const documentFactory = () => SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, documentFactory);
