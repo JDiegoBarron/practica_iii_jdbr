@@ -20,7 +20,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
         password: config.get('DB_PASSWORD'),
         database: config.get('DB_NAME'),
         autoLoadEntities: true,
-        synchronize: true, // crea las tablas automáticamente (perfecto para proyecto escolar)
+        synchronize: true,
       }),
     }),
     AuthModule,
